@@ -1,36 +1,30 @@
 nav
   display: flex
   position: relative
-  padding-bottom: $nav-down-padding
   height: $height_nav
   width: 100%
+  padding-bottom: $nav-down-padding
   justify-content: center
   background-color: #000000
 
 button.burger
   position: absolute
+  padding: 0
+  width: 30px
+  height: calc(#{$h1_size} /2)
   left: 32px
   bottom: $nav-down-padding
   transform: translateY(-50%)
-  width: 3rem
-  height: calc(#{$h1_size} - .8rem)
   border: none
   border-radius: 2px
   background-color: transparent
+  font-size: calc(#{$h1_size} /2)
   div
     position: absolute
-    top: 0
     width: 100%
-    border-top: 0.2rem solid #ffffff
+    top: 0
+    border-top: 0.2em solid #ffffff
   div+div
     top: 50%
   div+div+div
     top: 100%
-
-h1
-  align-self: flex-end
-  font-family: Roboto
-  font-weight: 900
-  font-size: $h1_size
-  color: white
-  text-align: center
