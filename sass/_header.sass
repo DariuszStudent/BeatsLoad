@@ -20,6 +20,10 @@ header
     p
       font-size: 2em
 
+// -----------------------------------PORTRAIT
+
+// -----------------------------------LANDSCAPE
+
 @media screen and (orientation: landscape)
   header
     background-position-y: 80%
@@ -29,3 +33,7 @@ header
     .wrap_header_content
       width: 60%
       height: 90%
+
+@media screen and (orientation: landscape) and (min-width: 640px)
+  header
+    font-size: 9px

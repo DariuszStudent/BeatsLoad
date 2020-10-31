@@ -2,7 +2,7 @@ section
   display: flex
   flex-direction: column
 
-.s1
+section.s1
   margin: 0 10px
   align-items: center
   .wrap_heading_s1
@@ -29,8 +29,16 @@ section
       p
         font-size: 1.2em
 
+// -----------------------------------PORTRAIT
+
+@media screen and (min-width: 360px)
+  section.s1
+    font-size: 11px
+
+// -----------------------------------LANDSCAPE
+
 @media screen and (orientation: landscape)
-  .s1
+  section.s1
     font-size: 10px
     .wrap_heading_s1
       width: 60%
@@ -45,3 +53,7 @@ section
           padding-top: 5px
           h4
             line-height: $h4_size
+
+@media screen and (orientation: landscape) and (min-width: 640px)
+  section.s1
+    font-size: 11px
