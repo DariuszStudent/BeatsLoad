@@ -1,47 +1,51 @@
-.s2
-  display: flex
-  align-items: flex-end
+section.s2
   background-color: black
   p
-    padding: 10px 20px 10px 30px
+    padding: 10px 0 10px
     font-weight: bold
     font-size: 2.1em
     text-align: right
     color: white
   .wrap_img_s2
-    display: flex
-    flex-direction: column
     position: relative
-    width: 100%
     margin-bottom: 20px
     img
       width: 100%
       max-width: 375px
     p
       position: absolute
-      top: 5%
-      left: 0
-  button
-    margin: 20px 20px 60px
+      top: 10%
+      right: 20px
+  .wrap_comment
+    text-align: right
+    margin: 0 20px
+    button.see_yourself
+      margin: 20px 0
 
 @media screen and (orientation: landscape)
-  .s2
+  section.s2
     display: flex
     flex-direction: row-reverse
-    align-items: flex-start
-    p
-      padding: 10px
-      font-size: 1.3em
-  .wrap_img_s2
-    display: flex
-    flex-direction: row
-    width: 65%
-    p
-      top: 5%
-      right: 5%
-  .wrap_comment
-    flex-grow: 1
-    width: 35%
-    button
-      padding: .4em 1em
-      font-size: 1em
+    justify-content: flex-end
+    align-items: center
+    font-size: 6px
+    .wrap_img_s2
+      margin-bottom: 0
+      flex-grow: 1
+      text-align: right
+      img
+        height: 100%
+        object-fit: cover
+      p
+        width: 70%
+        top: 5%
+        right: 5%
+    .wrap_comment
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      justify-content: center
+      height: 90%
+      max-width: 35%
+      button.see_yourself
+        padding: .4em 1em

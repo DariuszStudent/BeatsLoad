@@ -5,7 +5,7 @@ section
 .s1
   margin: 0 10px
   align-items: center
-  .wrap_load
+  .wrap_heading_s1
     margin: 20px 0
     text-align: center
     h3
@@ -31,11 +31,17 @@ section
 
 @media screen and (orientation: landscape)
   .s1
-    font-size: 11px
-    .wrap_load
+    font-size: 10px
+    .wrap_heading_s1
       width: 60%
-    article
-      img
-        height: 200px
-        object-fit: cover
-        object-position: top
+    main
+      display: flex
+      article
+        display: flex
+        flex-direction: column
+        margin: 0 5px 20px
+        .wrap_info_article
+          flex-grow: 1
+          padding-top: 5px
+          h4
+            line-height: $h4_size
