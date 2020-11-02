@@ -25,7 +25,9 @@ header
 
 @media (orientation: landscape)
   header
-    background-position-y: 80%
+    height: calc(100vh - #{$height_nav_landscape})
+    margin-top: $height_nav_landscape
+    background-image: url('../img/Background_big.jpg')
     background-size: cover
     align-items: center
     justify-content: center
